@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #FFFFFF;
+  --color-white2: #F5F5F5;
+  --color-platinum: #E8EBE4;
+  --color-gray: #BEC1BB;
+  --color-bluebell: #A491D2;
+  --color-blue2: #578FCA;
+  --color-soap: #CDC3E6;
+  --color-palelavender: #D4DCFF;
+  --color-darkjungle: #1B1F21;
+  --color-outerspace: #444749;
+  --color-oldsilver: #828485;
+  --color-yellow: #FFFF00;
+  --color-red: #FF0000;
+  --color-neon-green: #32CD32;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+}
+
+aside {
+  width: 400px;
+  min-height: 100vh;
+  border-right: 1px solid var(--color-platinum);
+}
+
+/* SECCION DE PERFIL USUARIO */
+
+aside .usuario-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+aside .usuario-perfil .usuario-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+aside .usuario-perfil .usuario-data {
+  display: flex;
+  flex-direction: column;
+}
+
+aside .usuario-perfil img {
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+aside .usuario-perfil .usuario-data .usuario-name {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+aside .usuario-perfil .usuario-data .usuario-status {
+  font-size: 12px;
+  color: var(--color-neon-green);
+}
+
+aside .usuario-perfil .usuario-actions {
+  display: flex;
+  gap: 1.2rem;
+}
+
+aside .user-perfil .user-actions svg {
+  color: var(--color-oldsilver);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* SECCION DEL BOTON  */
+
+aside .chat-access {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+aside .chat-access .btn-chat {
+  padding: 1rem 3rem;
+  background-color: var(--color-yellow);
+  color: var(--color-neon-green);
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.5);
+}
+
+aside .chat-access .btn-chat:hover {
+  background-color: var(--color-neon-green);
+  color: var(--color-yellow);
+}
+
+/* Reduce el tamaños del bonton ante el evento click  */
+
+aside .chat-access .btn-chat:active {
+  transform: scale(0.80);
+}
+
+/* Section Contact List */
+
+.contact-list .contact-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-gray);
+  padding: 15px 30px;
+  gap: 15px;
+  height: 90px; /* Modifica la altura del contenedor de cada contacto */
+}
+
+.contact-list .contact-item img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.contact-list .contact-item .contact-status {
+  color: var(--color-oldsilver);
+  font-size: 14px;
+}
+
+/* Contenido principal */
+
+main {
+  width:100%;
+  background-color: var(--color-white2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .principal-content {
+  width: 550px;
+  text-align: center;
+}
+
+main .principal-content img {
+  width: 300px;
+  margin-bottom: 1.6rem;
+  border-radius: 15px;
+}
+
+main .principal-content .titulo_principal {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--color-neon-green);
+  margin-left: 20px;
+}
+
+main .principal-content .parrafo_texto {
+  color: var(--color-bluebell);
+  line-height: 1.5;
+  padding: 0 1.8rem;
+}
